@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sora:wght@100..800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Russo+One&family=Sora:wght@100..800&family=Young+Serif&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  background: #2a1454;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #8750f7;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+body {
+  background-color: #0F0715;;
+}
+
+.hero-section  {
+  @apply mb-20;
+  background-color: #0F0715;
+  z-index: 0;
+}
+
+.hero-section::before  {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 322px;
+  height: 308px;
+  border-radius: 50%;
+  background: #8750f7;
+  -webkit-filter: blur(150px);
+  filter: blur(150px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nav-links {
+  @apply flex gap-12 font-semibold text-white max-lg:flex-col max-lg:top-[120px] max-lg:left-0 max-lg:w-full max-lg:bg-secondary max-lg:p-6;
+}
+
+.nav-links a {
+  @apply relative;
+}
+
+.nav-links a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  @apply bg-gradient-to-r from-primary-1 ;
+  bottom: -5px;
+  right: 0;
+  transition: width .2s ease-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left:0;
+}
+
+.social-links {
+  @apply border border-white rounded-full p-2 cursor-pointer;
+}
+
+.social-links:hover {
+  background-color: #8750F7;
+  border-color: #8750F7;
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 80s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.item:hover  .ex-text {
+  @apply text-white;
+}
+
+.skill:hover .skill-text   {
+  @apply text-primary-1;
+}
+
+.skill:hover .html   {
+  @apply text-orange-600;
+}
+
+.skill:hover .css   {
+  @apply text-blue-700;
+}
+
+.skill:hover .javascript   {
+  @apply text-yellow-400;
+}
+
+.skill:hover .php   {
+  @apply text-blue-900;
+}
+
+.skill:hover .python   {
+  @apply text-yellow-600;
+}
+
+.skill:hover .react   {
+  @apply text-blue-300;
+}
+
+.pulser  {
+  visibility: visible; 
+  animation-delay: 0.4s;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+}
