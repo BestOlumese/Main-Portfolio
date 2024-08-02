@@ -5,7 +5,7 @@ const Portfolios = () => {
     <div id='portfolios' className='flex flex-col gap-8 bg-[#0B0410] mt-[75px] px-[120px] max-xl:px-[50px] py-[100px]'>
         <div className='flex w-full justify-center items-center'>
             <div className="w-[60%] max-md:w-[100%] flex flex-col justify-center items-center gap-4">
-                <h1 className='bg-gradient-to-r from-primary-1 to-white bg-clip-text text-transparent text-[45px] max-xl:text-[39px] font-bold'>My Recent Works</h1>
+                <h1 className='bg-gradient-to-r from-primary-1 to-white bg-clip-text text-transparent text-[45px] max-sm:text-[30px] max-xl:text-[39px] text-center font-bold'>My Recent Works</h1>
                 <p className='text-white text-xl text-center'>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
             </div>
         </div>

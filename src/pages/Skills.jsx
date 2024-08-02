@@ -10,7 +10,7 @@ const Skills = () => {
           <h1 className='bg-gradient-to-r from-primary-1 to-white bg-clip-text text-transparent text-[45px] max-xl:text-[39px] font-bold'>My Skills</h1>
           <p className='text-white text-xl text-center'>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
         </div>
-        <div className="grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-6 gap-6">
           <div className="text-center flex flex-col gap-3">
             <div className="bg-[#140C1C] border  border-[#140C1C] hover:bg-secondary hover:border hover:border-primary-1 skill px-14 py-8 text-center w-full rounded-3xl cursor-pointer shadow-md flex flex-col gap-4 transition-all duration-300 ease-in">
               <IoLogoHtml5 className='text-white html text-[90px]' />
